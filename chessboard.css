@@ -1,0 +1,54 @@
+body {
+    background-color: antiquewhite;
+}
+.chessboard {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+.chessboard th {
+    font-weight: normal;
+}
+
+.chessboard > tbody > tr:nth-child(odd) > td:nth-of-type(odd) {
+    background-color: white;
+}
+
+.chessboard > tbody > tr:nth-child(odd) > td:nth-of-type(even) {
+    background-color: lightgray;
+}
+
+.chessboard > tbody > tr:nth-child(even) > td:nth-of-type(even) {
+    background-color: white;
+}
+
+.chessboard > tbody > tr:nth-child(even) > td:nth-of-type(odd) {
+    background-color: lightgray;
+}
+
+.chessboard td, .chessboard th {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.chessboard > tbody > tr:first-child > td {
+    border-top: medium solid black;
+}
+
+.chessboard > tbody > tr:last-child > td {
+    border-bottom: medium solid black;
+}
+
+.chessboard > tbody > tr > td:first-of-type {
+    border-left: medium solid black;
+}
+
+.chessboard > tbody > tr > td:last-of-type {
+    border-right: medium solid black;
+}
+
+
+.chessboard > tbody > tr > td:hover{
+    background-color: sienna !important;
+} 
