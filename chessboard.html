@@ -146,8 +146,7 @@
         <div id="currentSquare"></div>
         <script>
             function getIndex(element) {
-                return Array.from(element.parentMode.children)
-                .indexOf(element);
+                return Array.from(element.parentMode.children).indexOf(element);
             }
 
             document.querySelectorAll('table.chessboard td').forEach((element) => {
